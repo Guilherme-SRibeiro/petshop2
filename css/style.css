@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:#111;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    z-index:1000;
+}
+
+.logo{
+    color:#00ffff;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+}
+
+section{
+    padding:100px 8%;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:linear-gradient(
+        rgba(0,0,0,.7),
+        rgba(0,0,0,.7)
+    );
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero p{
+    margin:20px 0;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#00ffff;
+    color:black;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    animation:pulsar 2s infinite;
+}
+
+@keyframes pulsar{
+    0%{
+        box-shadow:0 0 5px #00ffff;
+    }
+
+    50%{
+        box-shadow:0 0 25px #00ffff;
+    }
+
+    100%{
+        box-shadow:0 0 5px #00ffff;
+    }
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.card{
+    background:#1a1a1a;
+    padding:25px;
+    border-radius:12px;
+    flex:1;
+    min-width:250px;
+}
+
+.destaque{
+    border:2px solid #00ffff;
+}
+
+.selo{
+    background:#00ffff;
+    color:black;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.beneficios{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+form{
+    max-width:500px;
+    margin:auto;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:8px;
+}
+
+button{
+    border:none;
+    cursor:pointer;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#111;
+}
